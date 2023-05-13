@@ -32,6 +32,7 @@ Manage your finances using a plain text file
 - [GUI - Web, Desktop and Mobile user interfaces](#gui---web-desktop-and-mobile-user-interfaces)
 - [Add/Edit Transactions](#addedit-transactions)
 - [Report](#report)
+- [Price Fetching](#price-fetching)
 - [Guides, Tutorial and Blog Posts](#guides-tutorial-and-blog-posts)
 - [Related Tools](#related-tools)
 - [Community](#community)
@@ -85,6 +86,13 @@ The ultimate reason to maintain a journal file is to extract informations. These
 - [hledger-args](https://github.com/edkedk99/hledger-args) - replacement for hledger command file using custom directives inside the journal file. Also provides an interactive report with placeholders to generate prompts.
 - [hledger2psql](https://github.com/edkedk99/hledger2psql) - Export a hledger journal file to a postgresql database to be used in data visualization software.
 - [hledger-lots](https://edkedk99.github.io/hledger-lots/) - View financial indicator including market price, profit and XIRR for one commodity or all commodities in a tabular form.
+
+## Price Fetching
+
+- [pricehist](https://gitlab.com/chrisberkhout/pricehist) - Download price history from multiple sources and output to multiple formats, including hledger price directive.
+- [hledger-stockquotes](https://github.com/prikhi/hledger-stockquotes#readme) - Read your journal and and try to download price directives for all non USD declared commodities.
+- [hledger-lots](https://edkedk99.github.io/hledger-lots/) - Download prices from declared accounts in the journal with a specific [tag](https://hledger.org/1.29/hledger.html#tags)
+
 
 ## Guides, Tutorial and Blog Posts
 

@@ -34,6 +34,7 @@ Manage your finances using a plain text file
 - [Report](#report)
 - [Price Fetching](#price-fetching)
 - [Guides, Tutorial and Blog Posts](#guides-tutorial-and-blog-posts)
+- [Videos](#videos)
 - [Related Tools](#related-tools)
 - [Community](#community)
 
@@ -100,6 +101,12 @@ The ultimate reason to maintain a journal file is to extract informations. These
 - [Barracudo Blog Post](https://memo.barrucadu.co.uk/personal-finance.html) - Lengthy discussion of a hledger personal usage.
 - [functional-finance-hledger](https://pauley.org.za/functional-finance-hledger/) - Slides on a hledger workflow based on importing csv files
 - [hledger github topic](https://github.com/topics/hledger?o=desc&s=updated) - Github topics page for hledger.
+
+## Videos
+
+- [Inside hledger](https://www.youtube.com/watch?v=6PKmZSHxu0c) - Discussion of the source code with a general discussion about hledger.
+- [Floss Weekly](https://www.youtube.com/watch?v=Xjl-wVJcYpE) - General discussion about hledger.
+- [Glenn Ramsey](https://www.youtube.com/watch?v=lazZwTmAEHs) - Introduction to hledger focused on invoice generation and csv import.
 
 ## Related Tools
 

@@ -55,21 +55,21 @@ Since hledger is based on a plain text journal file, a text editor is the main t
 
 ## TUI - Terminal User Interface to view, add and manage journal files
 
-Apps running on terminal that allows do navigate the transactions using menus, dialogs and reports without the need to use multiple command-line options.
+Interactive apps on terminal to navigate the transactions using menus, dialogs and reports without the need to use multiple command-line options.
 
 - [hledger-ui](https://hledger.org/1.29/hledger-ui.html "hledger-ui") - Official terminal interface for hledger.
 - [puffin](https://github.com/siddhantac/puffin) - A bubbletea based TUI to manage personal finances using hledger
 
 ## GUI - Web, Desktop and Mobile user interfaces
 
-Beatiful and graphical applications to manage journal files
+Beautiful and graphical applications to manage journal files
 
 - [hledger-web](https://hledger.org/1.29/hledger-web.html) - Official web interface for hledger.
 - [MoLe](https://mole.ktnx.net/) - Android front end to hledger-web
 
 ## Add/Edit Transactions
 
-Even complex transactions become simple to add with this tools.
+Even complex transactions become simple and convenient to add with these tools.
 
 - [hledger add](https://hledger.org/1.29/hledger.html#add) - Official interactive command-line tool to add transactions.
 - [hledger-iadd](https://github.com/hpdeifel/hledger-iadd) - Very convenient tool to add transactions to hledger journal.
@@ -81,7 +81,7 @@ Even complex transactions become simple to add with this tools.
 
 ## Report
 
-The ultimate reason to maintain a journal file is to extract informations. These tools helps in this process
+The ultimate reason to maintain a journal file is to extract information. Use these tools to process and visualize the data.
 
 - [hledger-plot](https://gitlab.com/nobodyinperson/hledger-utils#hledger-plot-plotting-charts-of-hledger-querieshledger-plot) - Plot chart of hledger queries.
 - [hledger-args](https://github.com/edkedk99/hledger-args) - replacement for hledger command file using custom directives inside the journal file. Also provides an interactive report with placeholders to generate prompts.
@@ -115,7 +115,7 @@ These tools are not made for hledger, but they provide import features to mainta
 - [Tabula](https://github.com/tabulapdf/tabula) - Extract data from tables in a pdf file to import to hledger.
 - [csvkit](https://csvkit.readthedocs.io) - Convert to csv and do operating like cut, grep, sort, join, stack, etc.
 - [GNU Make](https://www.gnu.org/software/make/) - Set multiple conversions, import and other operations for you ledger files.
-- [entr](https://github.com/eradman/entr) - AUtomatically run a hledger command when the journal changes. Available in most linux distributions
+- [entr](https://github.com/eradman/entr) - Automatically run a hledger command when the journal changes. Available in most linux distributions
 
 ## Community
 

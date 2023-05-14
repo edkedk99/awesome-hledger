@@ -15,9 +15,9 @@ The goal of this projects is not have everything related to hledger, but only th
 ## Adding an new Item
 
 
-- Try to fit your item into an existing sections. [Open a suggestion](https://github.com/YOUR_GITHUB_USER/YOUR_REPO/issues/new) to start as discussion about any new sections.
+- Try to fit your item into an existing sections. [Open a suggestion](https://github.com/edkedk99/awesome-hledger/issues/new) to start as discussion about any new sections.
 - Just create an issue with the name and links.
-- Briefly explain why this link follows the section [Content to be added](#Content-to-be-added)
+- Briefly explain why this link follows [Content to be added] guidelines (#Content-to-be-added)
 - If a duplicate item exists, discuss why the new item should replace it.
 - Check your spelling & grammar.
 - Try to follow this format:

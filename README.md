@@ -92,7 +92,7 @@ The ultimate reason to maintain a journal file is to extract information. Use th
 
 - [pricehist](https://gitlab.com/chrisberkhout/pricehist) - Download price history from multiple sources and output to multiple formats, including hledger price directive.
 - [hledger-stockquotes](https://github.com/prikhi/hledger-stockquotes#readme) - Read your journal and and try to download price directives for all non USD declared commodities.
-- [hledger-lots](https://edkedk99.github.io/hledger-lots/) - Download prices from declared accounts in the journal with a specific [tag](https://hledger.org/1.29/hledger.html#tags)
+- [hledger-lots](https://edkedk99.github.io/hledger-lots/) - Create automatic lots without subaccounts and tags and download prices from declared accounts in the journal with a specific [tag](https://hledger.org/1.29/hledger.html#tags)
 
 
 ## Guides, Tutorial and Blog Posts

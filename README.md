@@ -32,6 +32,7 @@ Manage your finances using a plain text file
 - [GUI - Web, Desktop and Mobile user interfaces](#gui---web-desktop-and-mobile-user-interfaces)
 - [Add/Edit Transactions](#addedit-transactions)
 - [Import Transactions](#import-transactions)
+- [Forecasting](#forecasting)
 - [Report](#report)
 - [Price Fetching](#price-fetching)
 - [Guides, Tutorial and Blog Posts](#guides-tutorial-and-blog-posts)
@@ -85,7 +86,10 @@ Bring transactions from other sources to hledger's format.
 - [hledger-flow](https://github.com/apauley/hledger-flow) - Guided hledger workflow to import transactions.
 - [ledger-autosync](https://gitlab.com/egh/ledger-autosync) - Import OFX file to hledger.
 - [invoice2data](https://github.com/invoice-x/invoice2data) - Import transactions from pdf invoices.
-- [hledger-forecast](https://github.com/olimorris/hledger-forecast) - Another implementation of the native [forecasting](https://hledger.org/1.29/hledger.html#forecasting) features using YAML.
+
+## Forecasting
+
+- [hledger-forecast](https://github.com/olimorris/hledger-forecast) - A wrapper which builds on hledger's forecasting capability using a yaml config file. Adds functionality for future cost rises (e.g. inflation) and the automatic tracking of planned transactions.
 
 ## Report
 

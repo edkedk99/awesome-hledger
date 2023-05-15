@@ -106,7 +106,6 @@ The ultimate reason to maintain a journal file is to extract information. Use th
 ## Guides, Tutorial and Blog Posts
 
 - [gizra.com](https://www.gizra.com/content/plain-text-accounting-hledger/) - Great introduction to hledger.
-- [Full-fledged Hledger](https://github.com/adept/full-fledged-hledger/wiki) - Tutorial on the basics of hledger.
 - [Barracudo Blog Post](https://memo.barrucadu.co.uk/personal-finance.html) - Lengthy discussion of a hledger personal usage.
 - [functional-finance-hledger](https://pauley.org.za/functional-finance-hledger/) - Slides on a hledger workflow based on importing csv files
 - [hledger github topic](https://github.com/topics/hledger?o=desc&s=updated) - Github topics page for hledger.
@@ -124,7 +123,8 @@ These tools are not made for hledger, but they provide import features to mainta
 - [Tabula](https://github.com/tabulapdf/tabula) - Extract data from tables in a pdf file to import to hledger.
 - [csvkit](https://csvkit.readthedocs.io) - Convert to csv and do operating like cut, grep, sort, join, stack, etc.
 - [GNU Make](https://www.gnu.org/software/make/) - Set multiple conversions, import and other operations for you ledger files.
-- [watchexec](https://github.com/watchexec/watchexec) - Automatically run a hledger command when the journal changes. Available in most linux distributions
+- [watchexec](https://github.com/watchexec/watchexec) - Automatically run a hledger command when the journal changes. Available in most linux distributions.
+- [entr](https://github.com/eradman/entr) - Alternative to [watchexec](https://github.com/watchexec/watchexec)
 
 ## Community
 

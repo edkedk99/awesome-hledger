@@ -75,8 +75,15 @@ Even complex transactions become simple and convenient to add with these tools.
 - [hledger-iadd](https://github.com/hpdeifel/hledger-iadd) - Very convenient tool to add transactions to hledger journal.
 - [hledger-edit](https://gitlab.com/nobodyinperson/hledger-utils#hledger-edit-editing-hledger-transactions-in-your-editor) - Edit hledger transactions in your $EDITOR limited to the result of a query.
 - [hledger-lots](https://edkedk99.github.io/hledger-lots/) - Add transactions involving buying and selling commodities with prices to for automatic lot management.
-- [hledger-flow](https://github.com/apauley/hledger-flow) - Guided hledger workflow to import transactions.
 - [obsidian_hledger](https://github.com/bzimor/obsidian_hledger) - Add transactions using Obsidian.
+
+## Import Transactions
+
+Bring transactions from other sources to hledger's format.
+
+- [hledger-flow](https://github.com/apauley/hledger-flow) - Guided hledger workflow to import transactions.
+- [ledger-autosync](https://gitlab.com/egh/ledger-autosync) - Import OFX file to hledger.
+- [invoice2data](https://github.com/invoice-x/invoice2data) - Import transactions from pdf invoices.
 - [hledger-forecast](https://github.com/olimorris/hledger-forecast) - Another implementation of the native [forecasting](https://hledger.org/1.29/hledger.html#forecasting) features using YAML.
 
 ## Report

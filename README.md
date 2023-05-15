@@ -97,6 +97,7 @@ The ultimate reason to maintain a journal file is to extract information. Use th
 
 ## Guides, Tutorial and Blog Posts
 
+- [https://www.gizra.com/content/plain-text-accounting-hledger/](gizra) - Great introduction to hledger.
 - [Full-fledged Hledger](https://github.com/adept/full-fledged-hledger/wiki) - Tutorial on the basics of hledger.
 - [Barracudo Blog Post](https://memo.barrucadu.co.uk/personal-finance.html) - Lengthy discussion of a hledger personal usage.
 - [functional-finance-hledger](https://pauley.org.za/functional-finance-hledger/) - Slides on a hledger workflow based on importing csv files

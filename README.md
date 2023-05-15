@@ -44,10 +44,10 @@ Manage your finances using a plain text file
 
 ## Text Editor Tools
 
-Since hledger is based on a plain text journal file, a text editor is the main tool to edit transactions. These extensions can be added to the text editors to make life easier.
+Since hledger is based on a plain text journal file, a text editor is the main tool to edit transactions. These extensions can be added to the text editors to make life easier as explained [here](https://hledger.org/editors.html).
 
-- [Emacs ledger-mode](https://www.hledger.org/) - Most used and maintained helper mode for hledger and Ledger files, but not 100% compatible with hledger.
-- [Emacs hledger-mode](https://www.hledger.org/) - An alternative to ledger-mode, written specifically for hledger. Has some different features. 
+- [Emacs ledger-mode](https://github.com/ledger/ledger-mode) - Most used and maintained helper mode for hledger and Ledger files, but not 100% compatible with hledger.
+- [Emacs hledger-mode](https://github.com/narendraj9/hledger-mode) - An alternative to ledger-mode, written specifically for hledger. Has some different features. 
 - [Emacs flycheck-hledger](https://github.com/DamienCassou/flycheck-hledger) - Provides realtime indication of problems in your journal. Can be combined with ledger-mode or hledger-mode.
 - [Vim vim-ledger](https://github.com/ledger/vim-ledger) - Vim plugin compatible with *ledger* and *hledger*.
 - [Vim hledger-vim](https://github.com/anekos/hledger-vim) - Alternative to *vim-ledger*.

@@ -124,7 +124,7 @@ These tools are not made for hledger, but they provide import features to mainta
 - [Tabula](https://github.com/tabulapdf/tabula) - Extract data from tables in a pdf file to import to hledger.
 - [csvkit](https://csvkit.readthedocs.io) - Convert to csv and do operating like cut, grep, sort, join, stack, etc.
 - [GNU Make](https://www.gnu.org/software/make/) - Set multiple conversions, import and other operations for you ledger files.
-- [entr](https://github.com/eradman/entr) - Automatically run a hledger command when the journal changes. Available in most linux distributions
+- [watchexec](https://github.com/watchexec/watchexec) - Automatically run a hledger command when the journal changes. Available in most linux distributions
 
 ## Community
 

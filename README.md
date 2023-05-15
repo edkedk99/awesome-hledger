@@ -31,6 +31,7 @@ Manage your finances using a plain text file
 - [TUI - Terminal User Interface to view, add and manage journal files](#tui---terminal-user-interface-to-view-add-and-manage-journal-files)
 - [GUI - Web, Desktop and Mobile user interfaces](#gui---web-desktop-and-mobile-user-interfaces)
 - [Add/Edit Transactions](#addedit-transactions)
+- [Import Transactions](#import-transactions)
 - [Report](#report)
 - [Price Fetching](#price-fetching)
 - [Guides, Tutorial and Blog Posts](#guides-tutorial-and-blog-posts)

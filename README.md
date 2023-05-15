@@ -93,7 +93,7 @@ The ultimate reason to maintain a journal file is to extract information. Use th
 
 - [hledger-plot](https://gitlab.com/nobodyinperson/hledger-utils#hledger-plot-plotting-charts-of-hledger-querieshledger-plot) - Plot chart of hledger queries.
 - [hledger-args](https://github.com/edkedk99/hledger-args) - replacement for hledger command file using custom directives inside the journal file. Also provides an interactive report with placeholders to generate prompts.
-- [hledger2psql](https://github.com/edkedk99/hledger2psql) - Export a hledger journal file to a postgresql database to be used in data visualization software.
+- [hledger2psql](https://github.com/edkedk99/hledger2psql) - Export a hledger journal file to a postgresql database to be used in data visualization software. Included docker-compose file for *Apache Superset*.
 - [hledger-lots](https://edkedk99.github.io/hledger-lots/) - View financial indicator including market price, profit and XIRR for one commodity or all commodities in a tabular form.
 
 ## Price Fetching

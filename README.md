@@ -32,7 +32,6 @@ Manage your finances using a plain text file
 - [GUI - Web, Desktop and Mobile user interfaces](#gui---web-desktop-and-mobile-user-interfaces)
 - [Add/Edit Transactions](#addedit-transactions)
 - [Import Transactions](#import-transactions)
-- [Forecasting](#forecasting)
 - [Report](#report)
 - [Price Fetching](#price-fetching)
 - [Guides, Tutorial and Blog Posts](#guides-tutorial-and-blog-posts)
@@ -87,10 +86,6 @@ Bring transactions from other sources to hledger's format.
 - [ledger-autosync](https://gitlab.com/egh/ledger-autosync) - Import OFX file to hledger.
 - [invoice2data](https://github.com/invoice-x/invoice2data) - Import transactions from pdf invoices.
 
-## Forecasting
-
-- [hledger-forecast](https://github.com/olimorris/hledger-forecast) - A wrapper which builds on hledger's forecasting capability using a yaml config file. Adds functionality for future cost rises (e.g. inflation) and the automatic tracking of planned transactions.
-
 ## Report
 
 The ultimate reason to maintain a journal file is to extract information. Use these tools to process and visualize the data.
@@ -99,6 +94,7 @@ The ultimate reason to maintain a journal file is to extract information. Use th
 - [hledger-args](https://github.com/edkedk99/hledger-args) - replacement for hledger command file using custom directives inside the journal file. Also provides an interactive report with placeholders to generate prompts.
 - [hledger2psql](https://github.com/edkedk99/hledger2psql) - Export a hledger journal file to a postgresql database to be used in data visualization software. Included docker-compose file for *Apache Superset*.
 - [hledger-lots](https://edkedk99.github.io/hledger-lots/) - View financial indicator including market price, profit and XIRR for one commodity or all commodities in a tabular form.
+- [hledger-forecast](https://github.com/olimorris/hledger-forecast) - A wrapper which builds on hledger's forecasting capability using a yaml config file. Adds functionality for future cost rises (e.g. inflation) and the automatic tracking of planned transactions.
 
 ## Price Fetching
 

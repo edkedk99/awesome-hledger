@@ -82,6 +82,7 @@ Even complex transactions become simple and convenient to add with these tools.
 
 Bring transactions from other sources to hledger's format.
 
+- [hledger (Built-in)](https://hledger.org/1.29/hledger.html#csv) - Built-in hledger's command to convert csv files.
 - [hledger-flow](https://github.com/apauley/hledger-flow) - Guided hledger workflow to import transactions.
 - [ledger-autosync](https://gitlab.com/egh/ledger-autosync) - Import OFX file to hledger.
 - [invoice2data](https://github.com/invoice-x/invoice2data) - Import transactions from pdf invoices.

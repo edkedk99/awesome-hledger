@@ -1,0 +1,210 @@
+* Emacs suggested configuration
+
+This is a collection of configuration that can improve the experience of managing a hledger journal.
+
+You should copy those *use-package* declarations that make sense to your existing configuration and it will download and configure all the packages needed on the first run.
+
+** use-package
+
+This is needed if you don't have already use-package or if your emacs version is under 29. It will be used to configure other packages.
+
+#+BEGIN_SRC emacs-lisp
+(unless (package-installed-p 'use-package)
+    (package-refresh-contents)
+    (package-install 'use-package))
+(require 'bind-key)
+#+END_SRC
+
+** Minibuffer
+
+Consider installing the following package to have a better vertical completion in minibuffer:
+
+- [[https://github.com/minad/vertico][vertico]]
+- [[https://github.com/oantolin/orderless][orderless]]
+- [[https://github.com/minad/consult][consult]]
+
+** Completion
+
+
+
+#+BEGIN_SRC emacs-lisp
+;; You should install this package only if you don't have any autocomplete package being used like company or autocomplete
+(use-package corfu
+  :ensure t
+  :hook ((minibuffer-setup . corfu-enable-in-minibuffer)
+	 (global-corfu-mode . (lambda ()
+				(corfu-history-mode)
+				(corfu-indexed-mode))))
+  :bind (:map corfu-map
+	      ("M-m" . corfu-move-to-minibuffer))
+  :init
+  (global-corfu-mode)
+  
+  (setq completion-cycle-threshold 3)
+  (setq tab-always-indent 'complete)
+  (setq corfu-auto t
+	corfu-quit-no-match 'separator)
+
+  (defun corfu-enable-in-minibuffer ()
+    "Enable Corfu in the minibuffer if `completion-at-point' is bound."
+    (when (where-is-internal #'completion-at-point (list (current-local-map)))
+      ;; (setq-local corfu-auto nil) ;; Enable/disable auto completion
+      (setq-local corfu-echo-delay nil ;; Disable automatic echo and popup
+                  corfu-popupinfo-delay nil)
+      (corfu-mode 1)))
+
+  (defun corfu-move-to-minibuffer ()
+    (interactive)
+    (let ((completion-extra-properties corfu--extra)
+          completion-cycle-threshold completion-cycling)
+      (apply #'consult-completion-in-region completion-in-region--data))))
+
+; It may be usefull to create snippets to the workflow
+(use-package yasnippet
+  :ensure t
+  :defer 3
+  :diminish yas-minor-mode
+  :config
+  (yas-global-mode))
+
+(use-package yasnippet-snippets
+  :ensure t
+  :defer t)
+#+END_SRC
+
+** Checks
+
+#+BEGIN_SRC emacs-lisp
+;; This is needed by flycheck-hledger
+(use-package flycheck
+  :ensure t
+  :defer t
+  :hook
+  ((ledger-mode - flycheck-mode)
+   (flycheck-error-list . visual-line-mode)))
+
+;; Check hledger errors
+(use-package flycheck-hledger
+  :ensure t
+  :after (flycheck ledger-mode)
+  :demand t)
+#+END_SRC
+
+** Layout
+
+#+BEGIN_SRC emacs-lisp
+;; This is just a suggestion of a beautiful theme, but you can choose between many available online
+(use-package ef-themes
+  :ensure t
+  :init
+  (setq ef-themes-mixed-fonts t
+	ef-themes-variable-pitch-ui t
+	ef-themes-to-toggle '(ef-day ef-winter))
+  (setq ef-themes-headings
+	'((1 . (light variable-pitch 1.4))
+          (2 . (regular 1.3))
+          (3 . (1.1))
+          (agenda-date . (1.3))
+          (agenda-structure . (variable-pitch light 1.8))
+          (t . (variable-pitch))))
+  :config
+  (mapc #'disable-theme custom-enabled-themes)
+  (ef-themes-select 'ef-day))
+
+;; Good to have orgmode structure in other modes. To use it ;; * Heading
+(use-package outshine
+  :hook ((emacs-lisp-mode . outshine-mode)
+	 (ledger-mode . outshine-mode)
+	 (conf-unix-mode . outshine-mode))
+  :init
+  (defvar outline-minor-mode-prefix "\M-o"))
+#+END_SRC
+
+
+** Main package
+
+#+BEGIN_SRC emacs-lisp
+; This mode will be activated on some extension to improve the usage with journal files
+; set the variable ledger-binary-path to the correct path of hledger binary
+(use-package ledger-mode
+  :defer t
+  :ensure t
+  :mode (("\\.hledger\\'" . ledger-mode)
+	 ("\\.journal\\'" . ledger-mode)
+	 ("\\.timedot\\'" . ledger-mode))
+  :init
+  (defun ledger-pending ()
+    (interactive)
+    (ledger-toggle-current-transaction 'pending))
+  :bind (:map ledger-mode-map
+	      ("C-c C-c" . ledger-pending))
+  :hook (ledger-mode . (lambda ()
+			 (setq-local completion-cycle-threshold t)
+			 (setq-local ledger-complete-in-steps nil)
+			 (display-line-numbers-mode)))
+  :config
+  (setq ledger-mode-should-check-version nil
+	ledger-binary-path (concat (getenv "HOME") "/bin/hledger")
+	ledger-init-file-name " "
+	ledger-report-links-in-register nil
+	ledger-report-native-highlighting-arguments '("--color=always")
+	ledger-report-auto-width nil
+	ledger-report-use-header-line t
+	ledger-report-use-native-highlighting t
+	ledger-report-auto-refresh-sticky-cursor t
+	ledger-highlight-xact-under-point nil)) 
+#+END_SRC
+** Source Control
+
+Those package are useful only if you plan to use source control with your journal
+
+#+BEGIN_SRC emacs-lisp
+(use-package magit-todos
+  :ensure t
+  :after (magit)
+  :config
+  (let ((inhibit-message t))
+    (magit-todos-mode 1))
+  (transient-append-suffix 'magit-status-jump '(0 0 -1)
+    '("T " "Todos" magit-todos-jump-to-todos)))
+
+(use-package magit
+  :ensure t
+  :defer t)
+
+(use-package git-timemachine
+  :ensure t
+  :defer t)
+#+END_SRC
+
+
+** Other packages
+
+#+BEGIN_SRC emacs-lisp
+;; Helps to discover keybindings
+(use-package which-key
+  :ensure t
+  :init
+  (setq which-key-use-C-h-commands nil)
+  (which-key-mode))
+
+;; Reload file after modification
+(use-package autorevert
+  :ensure nil
+  :init
+  (global-auto-revert-mode))
+
+;; Let you edit multiple lines at once
+(use-package multiple-cursors
+  :ensure t
+  :defer t
+  :init)
+
+;; See a tree of edits on the file
+(use-package undo-tree
+  :ensure t
+  :diminish undo-tree-mode
+  :init
+  (global-undo-tree-mode)
+  (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo"))))
+#+END_SRC

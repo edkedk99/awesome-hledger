@@ -106,6 +106,7 @@ The ultimate reason to maintain a journal file is to extract information. Use th
 
 ## Guides, Tutorial and Blog Posts
 
+- [contrib-resources](https://github.com/edkedk99/awesome-hledger/tree/contrib-resources/contrib-resources) - Place with resources about hledger in /awesome-hledger/ where any user can contribute with tutorials, articles, tips, etc.
 - [gizra.com](https://www.gizra.com/content/plain-text-accounting-hledger/) - Great introduction to hledger.
 - [Barracudo Blog Post](https://memo.barrucadu.co.uk/personal-finance.html) - Lengthy discussion of a hledger personal usage.
 - [functional-finance-hledger](https://pauley.org.za/functional-finance-hledger/) - Slides on a hledger workflow based on importing csv files
@@ -132,6 +133,7 @@ These tools are not made for hledger, but they provide import features to mainta
 
 Places to ask question about hledger and accounting in general
 
+- [contrib-resources](https://github.com/edkedk99/awesome-hledger/tree/contrib-resources/contrib-resources) - Place with resources about hledger in /awesome-hledger/ where any user can contribute with tutorials, articles, tips, etc.
 - [Reddit](https://www.reddit.com/r/plaintextaccounting/) - Plain Text Accounting with hledger and others ledger-like software.
 - [Matrix Chat](http://matrix.hledger.org/) - Matrix Chat room using [element](https://element.io/) chat client.
 - [Libera IRC](http://irc.hledger.org/) - Same chat room as the matrix, but using IRC.

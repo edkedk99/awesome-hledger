@@ -18,7 +18,7 @@ This is a bit more complex but may be preferred if the author is used to this gi
 
 ** Table of Contents
 
-- [[https://github.com/edkedk99/awesome-hledger/blob/pages/pages/hledger-beginner-tutorial.org][Beginner Tutorial]] - Tutorial for who is facing hledger for the first time
+- [[https://github.com/edkedk99/awesome-hledger/blob/contrib-resources/contrib-resources/hledger-beginner-tutorial.org][Beginner Tutorial]] - Tutorial for who is facing hledger for the first time
 - [[https://github.com/edkedk99/awesome-hledger/blob/contrib-resources/contrib-resources/emacs-init.org][Emacs init]] - Some configurations to add to Emacs init.el to improve the experience of managing journal files in Emacs.
 
 

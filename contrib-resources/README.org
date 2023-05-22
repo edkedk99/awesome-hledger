@@ -1,8 +1,13 @@
 * Community Resources
 
-This directory is a place to host articles, tutorials, and any content related to /hledger/ and created by the community.
+This directory is a host for articles, tutorials, or any knowledge related to /hledger/ and created by the community.
 
-Every hledger user has his work-flow, tips, and ideas on how he improved his usage after using it for some time. This is the place to share with the rest of the hledger users community.
+Every hledger user has his work-flow, tips, and ideas on how he improved his usage after using it for some time. This is the place to share that with the rest of the hledger users community.
+
+** Contents
+
+- [[https://github.com/edkedk99/awesome-hledger/blob/contrib-resources/contrib-resources/hledger-beginner-tutorial.org][Beginner Tutorial]] - Tutorial for who is facing hledger for the first time
+- [[https://github.com/edkedk99/awesome-hledger/blob/contrib-resources/contrib-resources/emacs-init.org][Emacs init]] - Some configurations to add to Emacs init.el to improve the experience of managing journal files in Emacs.
 
 ** Contributing 
 
@@ -16,9 +21,5 @@ This is the quick and easy method. Just create an issue and upload your article 
 
 This is a bit more complex but may be preferred if the author is used to this git feature. The main advantage is that the author will be included in the contributors page in the repository.
 
-** Table of Contents
-
-- [[https://github.com/edkedk99/awesome-hledger/blob/contrib-resources/contrib-resources/hledger-beginner-tutorial.org][Beginner Tutorial]] - Tutorial for who is facing hledger for the first time
-- [[https://github.com/edkedk99/awesome-hledger/blob/contrib-resources/contrib-resources/emacs-init.org][Emacs init]] - Some configurations to add to Emacs init.el to improve the experience of managing journal files in Emacs.
 
 

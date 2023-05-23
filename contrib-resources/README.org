@@ -6,8 +6,8 @@ Every hledger user has his work-flow, tips, and ideas on how he improved his usa
 
 ** Contents
 
-- [[https://github.com/edkedk99/awesome-hledger/blob/contrib-resources/contrib-resources/hledger-beginner-tutorial.org][Beginner Tutorial]] - Tutorial for who is facing hledger for the first time
-- [[https://github.com/edkedk99/awesome-hledger/blob/contrib-resources/contrib-resources/emacs-init.org][Emacs init]] - Some configurations to add to Emacs init.el to improve the experience of managing journal files in Emacs.
+- [[https://github.com/edkedk99/awesome-hledger/blob/master/contrib-resources/emacs-init.org][Beginner Tutorial]] - Tutorial for who is facing hledger for the first time
+- [[https://github.com/edkedk99/awesome-hledger/blob/master/contrib-resources/hledger-beginner-tutorial.org][Emacs init]] - Some configurations to add to Emacs init.el to improve the experience of managing journal files in Emacs.
 
 ** Contributing 
 

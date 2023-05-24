@@ -1,0 +1,138 @@
+* Hledger for the pragmatic businessman
+
+Hledger is an accounting and financial management software that uses a human-readable plain text file to store the data, instead of the traditional database based software that is hidden from the user. That means hledger's users has full control of his data, while traditional software usually saves the data outside the user control, so he can get his data only thru the software which is usually on the cloud or locally in closed source.
+
+At first sight, that is not a big problem because the practical man just want to get his job done and the traditional software gives that in an apparent more easy, intuitive, convenient and beautiful manner, but at the same time, it hides some strong side effects that this article pretend to highlight that will surely happen in a relatively short term.
+
+** Licensing
+
+*** hledger
+
+Free and open-source software, so you can just download the software or the source code to build yourself. 
+
+After that, no one can block the software from you or has the legal power to forbid its usage in court.
+
+*** Traditional Software
+
+When choosing the software, the user needs to decide not only on the features, but how is the pricing structure because some of them charge per records, per user or per features and what seem cheap at first, may become expensive when the need for more features appears. 
+
+*Take care* to not forget any payment or violate their terms of use because they can in a second revoke the access to their software and your data!!!
+
+** Features
+
+*** hledger
+
+Uses a full-fledged double-entry accounting system that seems too much for personal usage or a small company, but when you receive money that is not a revenue or pay something that is not an expense, like loan or investment, you will not be able to fit this information in the software in a very meaningful way. 
+
+It also offers out-of-box a very impressive set of features like countless reports, multi-currency/commodities, budgeting and much more!
+
+*** Traditional Software
+
+The company that sells the software wants to sell their software to a lot of users, so they will not provide many features that can scare new clients and will focus more on marketing than of the software itself. 
+
+One way to do that is avoiding double-entry accounting, which seems great at first but will for sure hurt the user when extracting information from the data with a limited set of reporting. 
+
+Regardless of the usage simplicity, or if it uses double-entry,  it is almost guaranteed the user will need a report in such a way that the developer didn't think of, and it will be probably economically unfeasible for the company to develop specifically for one client.
+
+** Extensibility
+
+The user will eventually need to import the data in a very specific format, or to output a report in a specific format after a specific calculation. Besides that, he may want to manage the work-flow in a specific manner.
+
+Everybody ends up at one point with a specific need that would be impossible for the software developer to prepare for that.
+
+*** hledger
+
+It has the easiest way to extend its functionality because it just needs the transaction to be appended in its simple format, and it output the full data structure and all the reports in multiple formats, including /csv/ and /json/. 
+
+Even if the user can't code, it is going to be simple to hire a beginner or amateur developer create the missing functionality.
+
+*** Traditional software
+
+Usually impossible or very difficult to adapt, and integration means the need to hire a third-party service and be dependent of their set of integration. 
+
+Unfortunately, there is a good chance that the user needs are expensive or not available.
+
+** Data Management
+
+*** hledger
+
+The user doesn't even need /hledger/ to edit the data, he can just open it with any text editor and use its features, like search and replace, copy and past, undo/redo, etc.
+
+*** Traditional software
+
+Good luck when the user need to do bulk edition. Probably the software doesn't offer that feature and doesn't give access to the database. And if it does, the user needs to master SQL and risk making a serious mistake.
+
+** Data Input
+
+Let's open our mind and think about the accounting work-flow: *It is just editing text!*. It may be attractive to have a fancy and colorful interface, but in reality it distracts the user for the main goal, which is a repetitive task to add transactions.
+
+*** hledger
+
+Offers a terminal based input form focused on the keyboard or allows the user to directly edit the plain text. It also offers graphical interface for those who prefer.
+
+*** Traditional software
+
+On every transaction, the user will probably need to use the keyboard and the mouse looking for the item to click on the screen.
+
+** Backup
+
+*** hledger
+
+The easiest thing to backup is a plain text file! And easiest to automate with *any* backup solution. It is also possible to use version control systems.
+
+*** Traditional Software
+
+Maybe they offer manual and incomplete download of the data. And let's hope the user remember backup every day. 
+
+Also, probably there is no version control, so if there is a mistake, be prepared to spend hours or days fixing.
+
+** Data Navigation
+
+*** hledger
+
+Possibly not as advanced as traditional software, but it offers keyboard-first terminal interface that has in fact a bigger learning curve but allow the user to be more efficient and also web based front-end.
+
+*** Traditional software
+
+Depending on which software, it can be more or less convenient method to navigate thru the data.
+
+** Automation
+
+*** hledger
+
+
+Import from multiple sources and methods, generate multiple reports in one command instead of one different command for each report, download market prices and use your creativity to create other automations.
+
+*** Traditional Software
+
+The user need luck to have his import data compatible with the software, generate each report with different command, and have limited possibility of automation. With some software, you may need to learn how to deal with some complex API.
+
+** Scaling
+
+*** hledger
+
+Limited scaling. Since the file is stored in a plain text file, it won't work with more than a few users.
+
+*** Traditional software
+
+Can scale easily if cloud based.
+
+** Conclusion
+
+At first sight, choosing a traditional software looks more attractive and easier to implement, so it may be worth to pay for it, even if giving out privacy and data control. But after a period of usage, frustration is unavoidable: Prices may grow, some features may be removed and the needs can grow and the software will not adapt. 
+
+If that happens, the user will learn the importance of having total control of his data, because he will realize the backup or export feature doesn't contain all the data or the format is not good enough to port to another software. So, significant time will be allocated to insert the data in a new software or just losing it.
+
+On the other side, hledger and, more broadly, plain text accounting doesn't offer a good scaling solution, and it is in fact a bit more difficult to understand how to start working. But after learning the basics, the users tend to be more efficient and will see a more rewarding experience.
+
+Even if it is not a pragmatic reason, privacy is an important aspect of the digital life in a world where the big techs and the government extend its powers and abuses of the common citizens. And, as the meme says:
+
+[[./img/cloud.jpg]]
+
+Anyway it is worth to visit [[https://www.hledger.org][hledger website]] and see if it works for your needs.
+
+
+
+
+
+#  LocalWords:  hledger's multi Extensibility automations

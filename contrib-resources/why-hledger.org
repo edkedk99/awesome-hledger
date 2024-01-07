@@ -2,7 +2,9 @@
 
 Hledger is an accounting and financial management software that uses a human-readable plain text file to store the data, instead of the traditional database based software that is hidden from the user. That means hledger's users has full control of his data, while traditional software usually saves the data outside the user control, so he can get his data only thru the software which is usually on the cloud or locally in closed source.
 
-At first sight, that is not a big problem because the practical man just want to get his job done and the traditional software gives that in an apparent more easy, intuitive, convenient and beautiful manner, but at the same time, it hides some strong side effects that this article pretend to highlight that will surely happen in a relatively short term.
+At first sight, that is not a big problem because the practical man just want to get his job done and the traditional software offers that in an apparent more easy, intuitive, convenient and beautiful manner. But, at the same time, it hides some undesirable side effects that can bring some serious probles ahead.
+
+This article compare /hledger/ and traditional software in multiple categories:
 
 ** Licensing
 
@@ -10,13 +12,13 @@ At first sight, that is not a big problem because the practical man just want to
 
 Free and open-source software, so you can just download the software or the source code to build yourself. 
 
-After that, no one can block the software from you or has the legal power to forbid its usage in court.
+After that, no one can block the software or forbid the usage, even in court
 
 *** Traditional Software
 
 When choosing the software, the user needs to decide not only on the features, but how is the pricing structure because some of them charge per records, per user or per features and what seem cheap at first, may become expensive when the need for more features appears. 
 
-*Take care* to not forget any payment or violate their terms of use because they can in a second revoke the access to their software and your data!!!
+*Take care* to not forget any payment or violate their hard to understand terms of use because they can in a second revoke the access to their software and your data!!!
 
 ** Features
 
@@ -24,21 +26,21 @@ When choosing the software, the user needs to decide not only on the features, b
 
 Uses a full-fledged double-entry accounting system that seems too much for personal usage or a small company, but when you receive money that is not a revenue or pay something that is not an expense, like loan or investment, you will not be able to fit this information in the software in a very meaningful way. 
 
-It also offers out-of-box a very impressive set of features like countless reports, multi-currency/commodities, budgeting and much more!
+It also offers out-of-box a very complete and impressive set of features like countless reports, multi-currency/commodities, budgeting and much more!
 
 *** Traditional Software
 
-The company that sells the software wants to sell their software to a lot of users, so they will not provide many features that can scare new clients and will focus more on marketing than of the software itself. 
+The company wants to sell their software to a lot of users, so they will not provide many features that can scare new clients and will focus more on marketing than of the software itself. 
 
 One way to do that is avoiding double-entry accounting, which seems great at first but will for sure hurt the user when extracting information from the data with a limited set of reporting. 
 
-Regardless of the usage simplicity, or if it uses double-entry,  it is almost guaranteed the user will need a report in such a way that the developer didn't think of, and it will be probably economically unfeasible for the company to develop specifically for one client.
+Regardless of the usage simplicity, or if it uses double-entry or not,  it is almost guaranteed the user will need a report in such a way that the developer didn't think of, and it will be probably economically unfeasible for the company to develop specifically for one client.
 
 ** Extensibility
 
-The user will eventually need to import the data in a very specific format, or to output a report in a specific format after a specific calculation. Besides that, he may want to manage the work-flow in a specific manner.
+The user will eventually need to import the data in a very specific format, or to output a report in a specific format after a specific calculation. Besides that, he may want to manage the work-flow in a specific way.
 
-Everybody ends up at one point with a specific need that would be impossible for the software developer to prepare for that.
+Everybody ends up at one point with a specific need that would be nonviable for the software developer to adjust for that.
 
 *** hledger
 
@@ -50,7 +52,7 @@ Even if the user can't code, it is going to be simple to hire a beginner or amat
 
 Usually impossible or very difficult to adapt, and integration means the need to hire a third-party service and be dependent of their set of integration. 
 
-Unfortunately, there is a good chance that the user needs are expensive or not available.
+Unfortunately, there is a good chance that the user needs are too expensive or not available.
 
 ** Data Management
 

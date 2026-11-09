@@ -60,6 +60,7 @@ Interactive apps on terminal to navigate the transactions using menus, dialogs a
 
 - [hledger-ui](https://hledger.org/1.29/hledger-ui.html "hledger-ui") - Official terminal interface for hledger.
 - [puffin](https://github.com/siddhantac/puffin) - A bubbletea based TUI to manage personal finances using hledger
+- [hledger-cal](https://github.com/igbanam/hledger-cal) - Calendar view of income and expenses for HLedger
 
 ## GUI - Web, Desktop and Mobile user interfaces
 
